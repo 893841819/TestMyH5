@@ -6,38 +6,31 @@
     <title>一世長安</title>
     <style type="text/css">
         body {
+            margin: 0;
+            padding: 0;
             background-image: url(./images/CHANGAN.jpg);
             background-repeat: no-repeat;
+            background-size: 54.55%;
             height: 100%;
         }
         html{
             height: 100%;
         }
         @keyframes myfirst {
-                  /*  from{background: red}
-                    to{background: aqua}*/
-                 0%{opacity: 0}
-            25%{opacity: 100%}
-            50%{opacity: 0}
-                  100%{opacity: 100}
-              }
+            /*  from{background: red}
+              to{background: aqua}*/
+            0% {opacity: 0}
+            25% {opacity: 25%}
+            50% {opacity: 50%}
+            100% {opacity:100%}
+        }
         @keyframes mysecond {
-            0% {
-                opacity: 0
-            }
-            25% {
-                opacity: 0
-            }
-            50% {
-                opacity: 100
-            }
-            100% {
-                opacity:0
-            }
+            0% {opacity: 0}
+            25% {opacity: 25%}
+            50% {opacity: 50%}
+            100% {opacity:100%}
         }
-        h1{
-            animation: myfirst 1s infinite;
-        }
+
         p {
             margin: 0;
             padding: 0;
@@ -46,19 +39,22 @@
             top: 0;
 
         }
-#yu{
-    width: 100%;
-    height: 350px;
-    animation: myfirst 2s infinite;
-    text-align:right;
+        #yu{
+            width: 100%;
+            height: 400px;
+            animation: myfirst 2s infinite;
+            text-align:right;
+            animation-direction: alternate-reverse;
 
-}
+        }
         #ming{
 
-           width: 95%;
+            width: 95%;
 
             text-align: right;
-            animation: mysecond 2s infinite;
+            animation: mysecond 2s  infinite;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
 
 
 
@@ -73,11 +69,11 @@
     您的浏览器不支持 audio 元素。
 </audio>
 
-   <!-- <audio controls autoplay>   <source src="/public/mp3/example.ogg" type="audio/ogg">   <source src="./mp3/WoYuXingWoDao.mp3" type="audio/mpeg">   您的浏览器不支持audio标签. </audio>-->
+<!-- <audio controls autoplay>   <source src="/public/mp3/example.ogg" type="audio/ogg">   <source src="./mp3/WoYuXingWoDao.mp3" type="audio/mpeg">   您的浏览器不支持audio标签. </audio>-->
 
 
-    <p id="yu">我<br>欲<br>与<br>君<br>相<br>知</p>
-    <p id="ming">长<br>命<br>无<br>绝<br>衰</p>
+<p id="yu">我<br>欲<br>与<br>君<br>相<br>知</p>
+<p id="ming">长<br>命<br>无<br>绝<br>衰</p>
 
 
 </body>
