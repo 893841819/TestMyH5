@@ -20,15 +20,15 @@
             /*  from{background: red}
               to{background: aqua}*/
             0% {opacity: 0}
-            25% {opacity: 25%}
-            50% {opacity: 50%}
-            100% {opacity:100%}
+           33.33% {opacity: 100}
+            66.66%{opacity: 0}
+            100% {opacity:0}
         }
         @keyframes mysecond {
             0% {opacity: 0}
-            25% {opacity: 25%}
-            50% {opacity: 50%}
-            100% {opacity:100%}
+            33.33% {opacity: 0}
+            66.66% {opacity: 100}
+            100% {opacity:0}
         }
 
         p {
@@ -42,9 +42,9 @@
         #yu{
             width: 100%;
             height: 400px;
-            animation: myfirst 2s infinite;
+            animation: myfirst 5s infinite;
             text-align:right;
-            animation-direction: alternate-reverse;
+
 
         }
         #ming{
@@ -52,9 +52,9 @@
             width: 95%;
 
             text-align: right;
-            animation: mysecond 2s  infinite;
-            animation-delay: 2s;
-            animation-direction: alternate-reverse;
+            animation: mysecond 5s  infinite;
+
+
 
 
 
