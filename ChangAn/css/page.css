@@ -5,11 +5,18 @@ body,head,page{
 }
 page{
     height: 100%;
+
     font-size: 180px;
     position: absolute;
     padding-top: 30%;
    text-align: center;
 
+
+}
+#z{
+    font-size: 36px;
+    display: block;
+    animation: z 10s infinite;
 
 }
 #c{
@@ -21,12 +28,24 @@ page{
     animation: x 10s infinite;
 }
 #q{
+
+    background: url(../images/qiu.jpg) no-repeat;
+    background-size: 100% 100%;
     animation: q 10s infinite;
+
 }
 #d{
     background-color: black;
     color: white;
     animation: d 10s infinite;
+}
+
+@keyframes z {
+    0%{opacity: 0}
+    70%{opacity: 0}
+    80%{opacity: 100}
+    90%{opacity: 0}
+    100%{opacity: 0}
 }
 
 @keyframes c {
